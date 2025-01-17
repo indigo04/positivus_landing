@@ -1,0 +1,38 @@
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 100px 140px;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 26px;
+
+        &__button {
+            display: flex;
+            width: fit-content;
+            color: #fff;
+            background-color: #000;
+            border-radius: 14px;
+            padding: 20px 35px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 500ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__image {
+        width: 50vw;
+        height: 40vh;
+        background-image: url('../../images/promo_image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 75%;
+    }
+}

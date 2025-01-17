@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  --green-color: #b9ff66;
+
+  font-family: "Space Grotesk", serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+.bg--green {
+  background-color: var(--green-color);
+  color: #000;
+  width: fit-content;
+}
+
+.bg--black {
+  background-color: #000;
+  color: #fff;
+}
+
+.bg--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.green__arrow {
+  background-image: url("./images/card_icon_green.png");
+}
+
+.black__arrow {
+  background-image: url("./images/card_icon.png");
+}
+
+.arrow__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5vh;
+  height: 5vh;
+  transition: 500ms;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.section__header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    &__title {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    &__paragraph {
+        margin: 0;
+        max-width: 50%;
+    }
+}
